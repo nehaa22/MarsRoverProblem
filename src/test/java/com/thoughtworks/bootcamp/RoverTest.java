@@ -11,6 +11,12 @@ public class RoverTest {
         Rover rover = new Rover(Direction.N, new Coordinate(0, 0));
         Rover movedRover = rover.turnLeft();
         Assertions.assertEquals(Direction.W, movedRover.getDirection());
-        // Assertions.assertTrue(true, rover.move(command));
+    }
+
+    @Test
+    public void givenInstruction_WhenTurnRight_ThenShouldTurnRight() {
+        Rover rover = new Rover(Direction.N, new Coordinate(0, 0));
+        Rover movedRover = rover.turnRight();
+        Assertions.assertEquals(Direction.E, movedRover.getDirection());
     }
 }
