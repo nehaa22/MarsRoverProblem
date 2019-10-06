@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.thoughtworks.bootcamp.DirectionTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-10-06T09:00:20" hostname="Snehas-MacBook-Pro-2.local" time="0.014">
+<testsuite name="com.thoughtworks.bootcamp.DirectionTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-10-06T09:02:42" hostname="Snehas-MacBook-Pro-2.local" time="0.009">
   <properties/>
-  <testcase name="givenDirectionWest_WhenTurnLeft_ThenShouldReturnSouth()" classname="com.thoughtworks.bootcamp.DirectionTest" time="0.009"/>
+  <testcase name="givenDirectionWest_WhenTurnLeft_ThenShouldReturnSouth()" classname="com.thoughtworks.bootcamp.DirectionTest" time="0.003"/>
+  <testcase name="givenDirectionEast_WhenTurnRight_ThenShouldReturnSouth()" classname="com.thoughtworks.bootcamp.DirectionTest" time="0.001"/>
   <testcase name="givenDirectionNorth_WhenTurnLeft_ThenShouldReturnWest()" classname="com.thoughtworks.bootcamp.DirectionTest" time="0.001"/>
   <testcase name="givenDirectionEast_WhenTurnLeft_ThenShouldReturnNorth()" classname="com.thoughtworks.bootcamp.DirectionTest" time="0.001"/>
   <testcase name="givenDirectionSouth_WhenTurnLeft_ThenShouldReturnEast()" classname="com.thoughtworks.bootcamp.DirectionTest" time="0.001"/>
