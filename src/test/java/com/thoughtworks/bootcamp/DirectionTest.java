@@ -14,7 +14,6 @@ public class DirectionTest { private Direction north,west,east,south;
         west = W;
         east = E;
         south=S;
-
     }
 
     @Test
@@ -24,16 +23,17 @@ public class DirectionTest { private Direction north,west,east,south;
     }
 
     @Test
-    void givenDirectionWest_WhenTurnLeft_ThenShouldReturnSouth()
-    {
-        assertEquals(S, west.turnLeft());
-    }
+    void givenDirectionWest_WhenTurnLeft_ThenShouldReturnSouth() { assertEquals(S, west.turnLeft()); }
 
     @Test
-    void givenDirectionEast_WhenTurnLeft_ThenShouldReturnNorth()
-    {
-        assertEquals(N, east.turnLeft());
-    }
+    void givenDirectionEast_WhenTurnLeft_ThenShouldReturnNorth() { assertEquals(N, east.turnLeft()); }
+
+    @Test
+    void givenDirectionSouth_WhenTurnLeft_ThenShouldReturnEast() { assertEquals(E, south.turnLeft()); }
+
+    @Test
+    void givenDirectionNorth_WhenTurnRight_ThenShouldReturnEast() { assertEquals(E, north.turnRight()); }
+
 
 
 }
