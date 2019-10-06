@@ -14,6 +14,13 @@ public class RoverTest {
     }
 
     @Test
+    public void givenFacingSouth_WhenTurnLeft_ThenShouldTurnEast() {
+        Rover rover = new Rover(Direction.S, new Coordinate(0, 0));
+        Rover movedRover = rover.turnLeft();
+        Assertions.assertEquals(Direction.E, movedRover.getDirection());
+    }
+
+    @Test
     public void givenInstruction_WhenTurnRight_ThenShouldTurnRight() {
         Rover rover = new Rover(Direction.N, new Coordinate(0, 0));
         Rover movedRover = rover.turnRight();

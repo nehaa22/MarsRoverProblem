@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.thoughtworks.bootcamp.RoverTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-10-06T10:58:24" hostname="Snehas-MacBook-Pro-2.local" time="0.009">
+<testsuite name="com.thoughtworks.bootcamp.RoverTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-06T11:00:12" hostname="Snehas-MacBook-Pro-2.local" time="0.011">
   <properties/>
-  <testcase name="givenInstruction_WhenTurnRight_ThenShouldTurnRight()" classname="com.thoughtworks.bootcamp.RoverTest" time="0.008"/>
-  <testcase name="givenInstruction_WhenTurnLeft_ThenShouldTurnLeft()" classname="com.thoughtworks.bootcamp.RoverTest" time="0.0"/>
+  <testcase name="givenInstruction_WhenTurnRight_ThenShouldTurnRight()" classname="com.thoughtworks.bootcamp.RoverTest" time="0.009"/>
+  <testcase name="givenFacingSouth_WhenTurnLeft_ThenShouldTurnEast()" classname="com.thoughtworks.bootcamp.RoverTest" time="0.001"/>
+  <testcase name="givenInstruction_WhenTurnLeft_ThenShouldTurnLeft()" classname="com.thoughtworks.bootcamp.RoverTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

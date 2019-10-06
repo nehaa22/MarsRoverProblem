@@ -9,7 +9,11 @@ public class Rover {
     }
 
     public Rover turnLeft() {
-        direction = Direction.W;
+        if (direction == Direction.S) {
+            direction = Direction.E;
+        } else {
+            direction = Direction.W;
+        }
         return this;
     }
 
