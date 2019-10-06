@@ -15,9 +15,6 @@ public enum Direction {
 
 
     };
-
-
-
     public abstract  Direction turnLeft();
 
 }
