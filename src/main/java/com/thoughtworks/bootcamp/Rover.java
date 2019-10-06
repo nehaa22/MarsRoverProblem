@@ -9,7 +9,15 @@ public class Rover {
         this.coordinate = coordinate;
     }
 
-    public String move() {
-        return "L";
+    public Rover move() {
+        return this;
+    }
+
+    public Rover turnLeft() {
+        return this;
+    }
+
+    public Direction getDirection() {
+        return Direction.W;
     }
 }

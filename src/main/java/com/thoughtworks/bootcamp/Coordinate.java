@@ -10,10 +10,4 @@ public class Coordinate {
         y = this.y;
     }
 
-    public boolean isAbove(Coordinate upperBound) {
-        return ((this.y >= upperBound.x / 2) && (this.y <= upperBound.x ));
-    }
-
-
-
 }
