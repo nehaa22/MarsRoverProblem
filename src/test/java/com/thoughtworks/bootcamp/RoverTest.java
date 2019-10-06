@@ -1,13 +1,14 @@
 package com.thoughtworks.bootcamp;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class RoverTest {
 
     @Test
-    public void givenInstruction_WhenTurnLeft_ThenShouldTurnLeft(){
-        new Rover(Direction.North,Coordinate coordinate);
-
-
+    public void givenInstruction_WhenTurnLeft_ThenShouldTurnLeft() {
+        Rover rover = new Rover(Direction.N, new Coordinate());
+       // Assertions.assertTrue(true, rover.move(command));
     }
 }
