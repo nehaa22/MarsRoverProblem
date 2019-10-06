@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.thoughtworks.bootcamp.DirectionTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-10-06T09:04:46" hostname="Snehas-MacBook-Pro-2.local" time="0.011">
+<testsuite name="com.thoughtworks.bootcamp.DirectionTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-10-06T09:45:22" hostname="Snehas-MacBook-Pro-2.local" time="0.007">
   <properties/>
-  <testcase name="givenDirectionWest_WhenTurnLeft_ThenShouldReturnSouth()" classname="com.thoughtworks.bootcamp.DirectionTest" time="0.004"/>
-  <testcase name="givenDirectionEast_WhenTurnRight_ThenShouldReturnSouth()" classname="com.thoughtworks.bootcamp.DirectionTest" time="0.001"/>
+  <testcase name="givenDirectionWest_WhenTurnLeft_ThenShouldReturnSouth()" classname="com.thoughtworks.bootcamp.DirectionTest" time="0.001"/>
+  <testcase name="givenDirectionEast_WhenTurnRight_ThenShouldReturnSouth()" classname="com.thoughtworks.bootcamp.DirectionTest" time="0.0"/>
   <testcase name="givenDirectionNorth_WhenTurnLeft_ThenShouldReturnWest()" classname="com.thoughtworks.bootcamp.DirectionTest" time="0.0"/>
   <testcase name="givenDirectionSouth_WhenTurnRight_ThenShouldReturnWest()" classname="com.thoughtworks.bootcamp.DirectionTest" time="0.0"/>
   <testcase name="givenDirectionEast_WhenTurnLeft_ThenShouldReturnNorth()" classname="com.thoughtworks.bootcamp.DirectionTest" time="0.0"/>
-  <testcase name="givenDirectionSouth_WhenTurnLeft_ThenShouldReturnEast()" classname="com.thoughtworks.bootcamp.DirectionTest" time="0.0"/>
+  <testcase name="givenDirectionSouth_WhenTurnLeft_ThenShouldReturnEast()" classname="com.thoughtworks.bootcamp.DirectionTest" time="0.001"/>
   <testcase name="givenDirectionWest_WhenTurnRight_ThenShouldReturnNorth()" classname="com.thoughtworks.bootcamp.DirectionTest" time="0.0"/>
   <testcase name="givenDirectionNorth_WhenTurnRight_ThenShouldReturnEast()" classname="com.thoughtworks.bootcamp.DirectionTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

@@ -8,7 +8,7 @@ public class RoverTest {
 
     @Test
     public void givenInstruction_WhenTurnLeft_ThenShouldTurnLeft() {
-        Rover rover = new Rover(Direction.N, new Coordinate());
+        Rover rover = new Rover(Direction.N, new Coordinate(2,2));
        // Assertions.assertTrue(true, rover.move(command));
     }
 }
