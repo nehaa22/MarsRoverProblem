@@ -6,12 +6,14 @@ import org.junit.jupiter.api.Test;
 import static com.thoughtworks.bootcamp.Direction.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class DirectionTest { private Direction north,west;
+public class DirectionTest { private Direction north,west,east,south;
 
     @BeforeEach
     void  setUp(){
         north = N;
         west = W;
+        east = E;
+        south=S;
 
     }
 
@@ -19,6 +21,18 @@ public class DirectionTest { private Direction north,west;
     void givenDirectionNorth_WhenTurnLeft_ThenShouldReturnWest()
     {
         assertEquals(W, north.turnLeft());
+    }
+
+    @Test
+    void givenDirectionWest_WhenTurnLeft_ThenShouldReturnSouth()
+    {
+        assertEquals(S, west.turnLeft());
+    }
+
+    @Test
+    void givenDirectionEast_WhenTurnLeft_ThenShouldReturnNorth()
+    {
+        assertEquals(N, east.turnLeft());
     }
 
 
