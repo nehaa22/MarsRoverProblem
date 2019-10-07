@@ -12,12 +12,22 @@ public class Coordinate {
     @Override
     public boolean equals(Object coordinate) {
         if (this == coordinate) return true;
+        if (!(coordinate instanceof Coordinate)) {
+            return false;
+        }
         Coordinate that = (Coordinate) coordinate;
-        return Double.compare(that.xCoordinate, xCoordinate) == 0 &&
-                Double.compare(that.yCoordinate, yCoordinate) == 0;
+        return (xCoordinate == that.xCoordinate && yCoordinate ==that.yCoordinate);
     }
 
-    Coordinate move(Direction direction){
-        return new Coordinate((xCoordinate + direction.move().xCoordinate ),(yCoordinate + direction.move().yCoordinate));
+    Coordinate add(Coordinate coordinate){
+        return new Coordinate((xCoordinate + coordinate.xCoordinate ),(yCoordinate + coordinate.yCoordinate));
+    }
+
+    @Override
+    public String toString() {
+        return "Coordinate{" +
+                "xCoordinate=" + xCoordinate +
+                ", yCoordinate=" + yCoordinate +
+                '}';
     }
 }

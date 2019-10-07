@@ -5,7 +5,7 @@ public enum Direction {
     N{
         public Direction left(){ return W;}
         public Direction right(){ return E;}
-        public Coordinate move(){ return new Coordinate(0,1); }
+        public Coordinate move(){ return new Coordinate(0,1);}
     },
     W{
         public Direction left(){ return S;}
