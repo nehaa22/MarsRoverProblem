@@ -71,7 +71,7 @@ class RoverTest {
     class MoveFromOrigin {
 
         @Test
-        void givenFacingSouth_WhenMove_ThenShouldreturnNewCoordinate() {
+        void givenFacingSouth_WhenMove_ThenShouldReturnNewCoordinate() {
             Rover rover = new Rover(Direction.S, origin());
             Assertions.assertEquals(new Coordinate(0, -1), rover.move());
 
@@ -115,5 +115,13 @@ class RoverTest {
 
         }
 
-    }
+         @Test
+         void givenFacingSouthtOnNewPosition_WhenMove_ThenShouldReturnNewCoordinate() {
+             Rover rover = new Rover(Direction.S, new Coordinate(3, -3));
+             Assertions.assertEquals(new Coordinate(3, -4), rover.move());
+
+         }
+
+
+     }
 }
