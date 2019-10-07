@@ -16,19 +16,18 @@ public class Rover {
     }
 
     public Direction turnRight() {
-       return direction.right();
+        return direction.right();
     }
 
     public Coordinate move() {
-        if(direction == Direction.N){
-            return (new Coordinate(coordinate.xCoordinate +0,coordinate.yCoordinate+1));
-        }else if(direction == Direction.S){
-            return (new Coordinate(coordinate.xCoordinate +0,coordinate.yCoordinate-1));
-        }else if(direction == Direction.E){
-            return (new Coordinate(coordinate.xCoordinate +1,coordinate.yCoordinate+0));
+        if (direction == Direction.N) {
+            return (new Coordinate(coordinate.xCoordinate + 0, coordinate.yCoordinate + 1));
+        } else if (direction == Direction.S) {
+            return (new Coordinate(coordinate.xCoordinate + 0, coordinate.yCoordinate - 1));
+        } else if (direction == Direction.E) {
+            return (new Coordinate(coordinate.xCoordinate + 1, coordinate.yCoordinate + 0));
+        } else {
+            return (new Coordinate(coordinate.xCoordinate - 1, coordinate.yCoordinate + 0));
         }
-        return null;
     }
-
-
 }
