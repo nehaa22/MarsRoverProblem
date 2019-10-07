@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.thoughtworks.bootcamp.RoverTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-10-07T05:51:13" hostname="Snehas-MacBook-Pro-2.local" time="0.016">
+<testsuite name="com.thoughtworks.bootcamp.RoverTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-10-07T06:01:40" hostname="Snehas-MacBook-Pro-2.local" time="0.016">
   <properties/>
   <testcase name="givenFacingSouth_WhenTurnLeft_ThenShouldFaceEast()" classname="com.thoughtworks.bootcamp.RoverTest" time="0.009"/>
   <testcase name="givenFacingEast_WhenTurnLeft_ThenShouldFaceNorth()" classname="com.thoughtworks.bootcamp.RoverTest" time="0.0"/>
-  <testcase name="givenFacingEast_WhenTurnRight_ThenShouldFaceSouth()" classname="com.thoughtworks.bootcamp.RoverTest" time="0.0"/>
-  <testcase name="givenFacingWest_WhenTurnLeft_ThenShouldFaceSouth()" classname="com.thoughtworks.bootcamp.RoverTest" time="0.0"/>
-  <testcase name="givenFacingNorth_WhenTurnRight_ThenShouldFaceEast()" classname="com.thoughtworks.bootcamp.RoverTest" time="0.0"/>
-  <testcase name="givenFacingNorth_WhenTurnLeft_ThenShouldFaceWest()" classname="com.thoughtworks.bootcamp.RoverTest" time="0.0"/>
-  <testcase name="givenFacingWest_WhenTurnRight_ThenShouldFaceNorth()" classname="com.thoughtworks.bootcamp.RoverTest" time="0.0"/>
+  <testcase name="givenFacingEast_WhenTurnRight_ThenShouldFaceSouth()" classname="com.thoughtworks.bootcamp.RoverTest" time="0.001"/>
+  <testcase name="givenFacingWest_WhenTurnLeft_ThenShouldFaceSouth()" classname="com.thoughtworks.bootcamp.RoverTest" time="0.001"/>
+  <testcase name="givenFacingNorth_WhenTurnRight_ThenShouldFaceEast()" classname="com.thoughtworks.bootcamp.RoverTest" time="0.001"/>
+  <testcase name="givenFacingNorth_WhenTurnLeft_ThenShouldFaceWest()" classname="com.thoughtworks.bootcamp.RoverTest" time="0.001"/>
+  <testcase name="givenFacingWest_WhenTurnRight_ThenShouldFaceNorth()" classname="com.thoughtworks.bootcamp.RoverTest" time="0.001"/>
   <testcase name="givenFacingSouth_WhenTurnRight_ThenShouldFaceWest()" classname="com.thoughtworks.bootcamp.RoverTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

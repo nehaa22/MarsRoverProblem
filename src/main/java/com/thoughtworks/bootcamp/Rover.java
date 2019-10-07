@@ -12,20 +12,8 @@ public class Rover {
         return direction.left();
     }
 
-    public Direction getDirection() {
-        return direction;
+    public Direction turnRight() {
+       return direction.right();
     }
 
-    public Rover turnRight() {
-        if(direction == Direction.E){
-            direction = Direction.S;
-        }else if(direction == Direction.S){
-            direction = Direction.W;
-        }else if(direction == Direction.W){
-            direction = Direction.N;
-        }else {
-            direction = Direction.E;
-        }
-        return this;
-    }
 }
