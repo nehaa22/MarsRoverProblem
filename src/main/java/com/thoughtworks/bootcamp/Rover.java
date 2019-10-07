@@ -8,17 +8,8 @@ public class Rover {
         this.direction = direction;
     }
 
-    public Rover turnLeft() {
-        if (direction == Direction.S) {
-            direction = Direction.E;
-        } else if(direction ==Direction.E){
-            direction = Direction.N;
-        }else if(direction == Direction.W){
-            direction = Direction.S;
-        }else {
-            direction = Direction.W;
-        }
-        return this;
+    public Direction turnLeft() {
+        return direction.left();
     }
 
     public Direction getDirection() {
