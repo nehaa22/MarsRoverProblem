@@ -5,6 +5,14 @@ public enum Direction {
     N,
     W,
     E,
-    S
+    S;
+
+    public Direction left() {
+        return S;
+    }
+
+    public  Direction right(){
+        return W;
+    }
 
 }

@@ -11,7 +11,9 @@ public class Rover {
     public Rover turnLeft() {
         if (direction == Direction.S) {
             direction = Direction.E;
-        } else {
+        } else if(direction ==Direction.E){
+            direction = Direction.N;
+        }else {
             direction = Direction.W;
         }
         return this;
@@ -22,7 +24,15 @@ public class Rover {
     }
 
     public Rover turnRight() {
-        direction = Direction.E;
+        if(direction == Direction.E){
+            direction = Direction.S;
+        }else if(direction == Direction.S){
+            direction = Direction.W;
+        }else if(direction == Direction.W){
+            direction = Direction.N;
+        }else {
+            direction = Direction.E;
+        }
         return this;
     }
 }
