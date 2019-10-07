@@ -1,10 +1,8 @@
 package com.thoughtworks.bootcamp;
 
-import java.util.Objects;
-
 public class Coordinate {
-    double xCoordinate;
-    double yCoordinate;
+    private double xCoordinate;
+    private double yCoordinate;
 
     public Coordinate(double xCoordinate, double yCoordinate) {
         this.xCoordinate = xCoordinate;
@@ -14,11 +12,12 @@ public class Coordinate {
     @Override
     public boolean equals(Object coordinate) {
         if (this == coordinate) return true;
-        if (coordinate == null || getClass() != coordinate.getClass()) return false;
         Coordinate that = (Coordinate) coordinate;
         return Double.compare(that.xCoordinate, xCoordinate) == 0 &&
                 Double.compare(that.yCoordinate, yCoordinate) == 0;
     }
 
-
+    Coordinate move(Direction direction){
+        return new Coordinate((xCoordinate + direction.move().xCoordinate ),(yCoordinate + direction.move().yCoordinate));
+    }
 }
