@@ -55,6 +55,12 @@ public class RoverTest {
         Assertions.assertEquals(Direction.N, movedRover.getDirection());
     }
 
+    @Test
+    public void givenFacingWest_WhenTurnLeft_ThenShouldFaceSouth() {
+        Rover rover = new Rover(Direction.W, new Coordinate(0, 0));
+        Rover movedRover = rover.turnLeft();
+        Assertions.assertEquals(Direction.S, movedRover.getDirection());
+    }
 
 
 

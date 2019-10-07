@@ -13,6 +13,8 @@ public class Rover {
             direction = Direction.E;
         } else if(direction ==Direction.E){
             direction = Direction.N;
+        }else if(direction == Direction.W){
+            direction = Direction.S;
         }else {
             direction = Direction.W;
         }
