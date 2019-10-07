@@ -53,4 +53,27 @@ class RoverTest {
         Assertions.assertEquals(Direction.N, rover.turnRight());
     }
 
+    @Test
+    void  givenFacingNorth_WhenMove_ThenShouldreturnNewCoordinate(){
+        Rover rover = new Rover(Direction.N, new Coordinate(0, 0));
+        Assertions.assertEquals(new Coordinate(0,1),rover.move());
+
+    }
+
+    @Test
+    void  givenFacingSouth_WhenMove_ThenShouldreturnNewCoordinate(){
+        Rover rover = new Rover(Direction.S, new Coordinate(0, 0));
+        Assertions.assertEquals(new Coordinate(0,-1),rover.move());
+
+    }
+
+    @Test
+    void  givenFacingEast_WhenMove_ThenShouldreturnNewCoordinate(){
+        Rover rover = new Rover(Direction.E, new Coordinate(0, 0));
+        Assertions.assertEquals(new Coordinate(1,0),rover.move());
+
+    }
+
+
+
 }
