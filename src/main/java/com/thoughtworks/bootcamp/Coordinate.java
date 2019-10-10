@@ -16,11 +16,11 @@ public class Coordinate {
             return false;
         }
         Coordinate that = (Coordinate) coordinate;
-        return (xCoordinate == that.xCoordinate && yCoordinate ==that.yCoordinate);
+        return (xCoordinate == that.xCoordinate && yCoordinate == that.yCoordinate);
     }
 
-    Coordinate add(Coordinate coordinate){
-        return new Coordinate((xCoordinate + coordinate.xCoordinate ),(yCoordinate + coordinate.yCoordinate));
+    Coordinate add(Coordinate coordinate) {
+        return new Coordinate((xCoordinate + coordinate.xCoordinate), (yCoordinate + coordinate.yCoordinate));
     }
 
     @Override

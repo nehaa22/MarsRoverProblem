@@ -78,32 +78,39 @@ class RoverTest {
         }
 
         @Test
-        void givenFacingEast_WhenMove_ThenShouldreturnNewCoordinate() {
+        void givenFacingEast_WhenMove_ThenShouldReturnNewCoordinate() {
             Rover rover = new Rover(Direction.E, origin());
             Assertions.assertEquals(new Coordinate(1, 0), rover.move());
 
         }
 
         @Test
-        void givenFacingWest_WhenMove_ThenShouldreturnNewCoordinate() {
+        void givenFacingWest_WhenMove_ThenShouldReturnNewCoordinate() {
             Rover rover = new Rover(Direction.W, origin());
             Assertions.assertEquals(new Coordinate(-1, 0), rover.move());
 
         }
+
+        @Test
+        void givenFacingNorth_WhenMove_ThenShouldReturnNewCoordinate() {
+            Rover rover = new Rover(Direction.N, origin());
+            Assertions.assertEquals(new Coordinate(0, 1), rover.move());
+
+        }
     }
 
-     @Nested
-     class MoveFromAnyCoordinate{
+    @Nested
+    class MoveFromAnyCoordinate {
         @Test
         void givenFacingWestOnNewPosition_WhenMove_ThenShouldReturnNewCoordinate() {
-            Rover rover = new Rover(Direction.W,new Coordinate(2,2));
+            Rover rover = new Rover(Direction.W, new Coordinate(2, 2));
             Assertions.assertEquals(new Coordinate(1, 2), rover.move());
 
         }
 
         @Test
         void givenFacingNorthOnNewPosition_WhenMove_ThenShouldReturnNewCoordinate() {
-            Rover rover = new Rover(Direction.N,new Coordinate(3,2));
+            Rover rover = new Rover(Direction.N, new Coordinate(3, 2));
             Assertions.assertEquals(new Coordinate(3, 3), rover.move());
 
         }
@@ -115,13 +122,13 @@ class RoverTest {
 
         }
 
-         @Test
-         void givenFacingSouthtOnNewPosition_WhenMove_ThenShouldReturnNewCoordinate() {
-             Rover rover = new Rover(Direction.S, new Coordinate(3, -3));
-             Assertions.assertEquals(new Coordinate(3, -4), rover.move());
+        @Test
+        void givenFacingSouthtOnNewPosition_WhenMove_ThenShouldReturnNewCoordinate() {
+            Rover rover = new Rover(Direction.S, new Coordinate(3, -3));
+            Assertions.assertEquals(new Coordinate(3, -4), rover.move());
 
-         }
+        }
 
 
-     }
+    }
 }
