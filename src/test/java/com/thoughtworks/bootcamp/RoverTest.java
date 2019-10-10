@@ -129,7 +129,7 @@ class RoverTest {
         }
 
         @Test
-        void name() {
+        void givenFacingSouthOnNewPosition_WhenMoveThreeTimes_ThenShouldReturnNewCoordinate() {
             Rover rover = new Rover(Direction.S, new Coordinate(3, -3));
             rover.move();
             rover.move();
