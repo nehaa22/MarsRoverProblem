@@ -23,9 +23,9 @@ public class Coordinate {
         return new Coordinate((xCoordinate + direction.move().xCoordinate), (yCoordinate + direction.move().yCoordinate));
     }
 
-    public boolean isBetween(Coordinate upperCoordinate) {
-        return ((xCoordinate >= 0 && xCoordinate <= upperCoordinate.xCoordinate)
-                && yCoordinate >= 0 && yCoordinate <= upperCoordinate.yCoordinate);
+    public boolean isBetween(Coordinate lowerCoordinate, Coordinate upperCoordinate) {
+        return ((xCoordinate >= lowerCoordinate.xCoordinate && xCoordinate <= upperCoordinate.xCoordinate)
+                && yCoordinate >= lowerCoordinate.yCoordinate && yCoordinate <= upperCoordinate.yCoordinate);
     }
 
     @Override

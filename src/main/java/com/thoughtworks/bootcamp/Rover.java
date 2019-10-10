@@ -11,7 +11,7 @@ public class Rover {
     }
 
     public Direction turnLeft() {
-       Direction newDirection = direction.left();
+        Direction newDirection = direction.left();
         return this.direction = newDirection;
     }
 
