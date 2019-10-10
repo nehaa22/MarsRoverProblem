@@ -19,8 +19,8 @@ public class Coordinate {
         return (xCoordinate == that.xCoordinate && yCoordinate == that.yCoordinate);
     }
 
-    Coordinate add(Coordinate coordinate) {
-        return new Coordinate((xCoordinate + coordinate.xCoordinate), (yCoordinate + coordinate.yCoordinate));
+    Coordinate move(Direction direction) {
+        return new Coordinate((xCoordinate + direction.move().xCoordinate), (yCoordinate + direction.move().yCoordinate));
     }
 
     @Override

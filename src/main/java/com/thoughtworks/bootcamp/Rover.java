@@ -19,7 +19,6 @@ public class Rover {
     }
 
     public Coordinate move() {
-        Coordinate directionCoordinate = direction.move();
-        return coordinate.add(directionCoordinate);
+        return coordinate.move(direction);
     }
 }
