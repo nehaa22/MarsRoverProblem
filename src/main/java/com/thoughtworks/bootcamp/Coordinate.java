@@ -30,4 +30,10 @@ public class Coordinate {
                 ", yCoordinate=" + yCoordinate +
                 '}';
     }
+
+
+    public boolean isBetween(Coordinate upperCoordinate) {
+        return ((xCoordinate >= 0 || xCoordinate <= upperCoordinate.xCoordinate)
+                && yCoordinate <= 0 || yCoordinate <= upperCoordinate.yCoordinate);
+    }
 }
