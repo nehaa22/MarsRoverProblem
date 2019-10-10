@@ -1,5 +1,7 @@
 package com.thoughtworks.bootcamp;
 
+import com.thoughtworks.bootcamp.Exception.RoverDeadException;
+
 public class Rover {
 
     private Direction direction;
@@ -20,8 +22,14 @@ public class Rover {
         return this.direction = newDirection;
     }
 
-    public Coordinate move() {
+    public Coordinate move() throws RoverDeadException {
         Coordinate newCoordinate = coordinate.move(direction);
-        return this.coordinate = newCoordinate;
+
+        Coordinate upperCoordinate = new Coordinate(5, 5);
+        Coordinate lowerCoordinate = new Coordinate(0, 0);
+        if (newCoordinate.isBetween(lowerCoordinate, upperCoordinate))
+            return this.coordinate = newCoordinate;
+        else
+            throw new RoverDeadException();
     }
 }

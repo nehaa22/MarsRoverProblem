@@ -1,5 +1,6 @@
 package com.thoughtworks.bootcamp;
 
+import com.thoughtworks.bootcamp.Exception.RoverDeadException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
@@ -87,28 +88,28 @@ class RoverTest {
     class MoveFromOrigin {
 
         @Test
-        void givenFacingSouth_WhenMove_ThenShouldReturnNewCoordinate() {
+        void givenFacingSouth_WhenMove_ThenShouldReturnNewCoordinate() throws RoverDeadException {
             Rover rover = new Rover(Direction.S, origin());
-            Assertions.assertEquals(new Coordinate(0, -1), rover.move());
+            Assertions.assertThrows(RoverDeadException.class, () -> rover.move());
 
         }
 
         @Test
-        void givenFacingEast_WhenMove_ThenShouldReturnNewCoordinate() {
+        void givenFacingEast_WhenMove_ThenShouldReturnNewCoordinate() throws RoverDeadException {
             Rover rover = new Rover(Direction.E, origin());
             Assertions.assertEquals(new Coordinate(1, 0), rover.move());
 
         }
 
         @Test
-        void givenFacingWest_WhenMove_ThenShouldReturnNewCoordinate() {
+        void givenFacingWest_WhenMove_ThenShouldReturnNewCoordinate() throws RoverDeadException {
             Rover rover = new Rover(Direction.W, origin());
-            Assertions.assertEquals(new Coordinate(-1, 0), rover.move());
+            Assertions.assertThrows(RoverDeadException.class, () -> rover.move());
 
         }
 
         @Test
-        void givenFacingNorth_WhenMove_ThenShouldReturnNewCoordinate() {
+        void givenFacingNorth_WhenMove_ThenShouldReturnNewCoordinate() throws RoverDeadException {
             Rover rover = new Rover(Direction.N, origin());
             Assertions.assertEquals(new Coordinate(0, 1), rover.move());
 
@@ -118,56 +119,49 @@ class RoverTest {
     @Nested
     class MoveFromAnyCoordinate {
         @Test
-        void givenFacingWestOnNewPosition_WhenMove_ThenShouldReturnNewCoordinate() {
+        void givenFacingWestOnNewPosition_WhenMove_ThenShouldReturnNewCoordinate() throws RoverDeadException {
             Rover rover = new Rover(Direction.W, new Coordinate(2, 2));
             Assertions.assertEquals(new Coordinate(1, 2), rover.move());
 
         }
 
         @Test
-        void givenFacingNorthOnNewPosition_WhenMove_ThenShouldReturnNewCoordinate() {
+        void givenFacingNorthOnNewPosition_WhenMove_ThenShouldReturnNewCoordinate() throws RoverDeadException {
             Rover rover = new Rover(Direction.N, new Coordinate(3, 2));
             Assertions.assertEquals(new Coordinate(3, 3), rover.move());
 
         }
 
         @Test
-        void givenFacingEastOnNewPosition_WhenMove_ThenShouldReturnNewCoordinate() {
-            Rover rover = new Rover(Direction.E, new Coordinate(1, -2));
-            Assertions.assertEquals(new Coordinate(2, -2), rover.move());
+        void givenFacingEastOnNewPosition_WhenMove_ThenShouldReturnNewCoordinate() throws RoverDeadException {
+            Rover rover = new Rover(Direction.E, new Coordinate(1, 2));
+            Assertions.assertEquals(new Coordinate(2, 2), rover.move());
 
         }
 
         @Test
-        void givenFacingSouthOnNewPosition_WhenMove_ThenShouldReturnNewCoordinate() {
-            Rover rover = new Rover(Direction.S, new Coordinate(3, -3));
-            Assertions.assertEquals(new Coordinate(3, -4), rover.move());
+        void givenFacingSouthOnNewPosition_WhenMove_ThenShouldReturnNewCoordinate() throws RoverDeadException {
+            Rover rover = new Rover(Direction.S, new Coordinate(3, 3));
+            Assertions.assertEquals(new Coordinate(3, 2), rover.move());
         }
 
         @Test
-        void givenFacingSouthOnNewPosition_WhenMoveThreeTimes_ThenShouldReturnNewCoordinate() {
-            Rover rover = new Rover(Direction.S, new Coordinate(3, -3));
+        void givenFacingSouthOnNewPosition_WhenMoveThreeTimes_ThenShouldReturnNewCoordinate() throws RoverDeadException {
+            Rover rover = new Rover(Direction.S, new Coordinate(3, 3));
             rover.move();
             rover.move();
-            Assertions.assertEquals(new Coordinate(3, -6), rover.move());
+            Assertions.assertEquals(new Coordinate(3, 0), rover.move());
         }
 
+        @Test
+        void givenFacingNorthOnBoundaryPosition_WhenMove_ThenShouldThrowRoadDeadException() {
+            Rover rover = new Rover(Direction.N, new Coordinate(4, 5));
+            Assertions.assertThrows(RoverDeadException.class, () -> rover.move());
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-//        @Test
-//        void  givenFacingNorthOnBoundaryPosition_WhenMove_ThenShouldThrowRoadDeadException(){
-//            Rover rover = new Rover(Direction.N,new Coordinate(4,5));
-//            Assertions.assertThrows(RoverDeadException.class, () ->rover.move());
-//        }
+        @Test
+        void givenWhenDeadRoverFacingNorth_WhenMove_ThenShouldThrowRoverAlreadyDeadException(){
+            Rover rover = new Rover(Direction.N,)
+        }
     }
 }

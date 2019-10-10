@@ -11,7 +11,7 @@ public class Plateau {
     }
 
     public boolean isWithinBound(Coordinate roverCoordinate) {
-        return roverCoordinate.isBetween(lowerCoordinate,upperCoordinate);
+        return roverCoordinate.isBetween(lowerCoordinate, upperCoordinate);
     }
 
 }

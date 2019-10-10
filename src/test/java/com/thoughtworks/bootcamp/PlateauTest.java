@@ -27,22 +27,22 @@ class PlateauTest {
     }
 
     @Test
-    void givenCoordinateTwoAndMinusThree_WhenIsWithinBound_ThenShouldReturnTrue() throws RoverDeadException {
+    void givenCoordinateFourAndThree_WhenIsWithinBound_ThenShouldReturnTrue() throws RoverDeadException {
         Coordinate upperCoordinate = new Coordinate(5, 5);
         Plateau plateau = new Plateau(upperCoordinate);
 
-        Coordinate roverCoordinate = new Coordinate(2, -3);
-        Assertions.assertFalse(plateau.isWithinBound(roverCoordinate));
+        Coordinate roverCoordinate = new Coordinate(4, 3);
+        Assertions.assertTrue(plateau.isWithinBound(roverCoordinate));
 
     }
 
     @Test
-    void givenCoordinateMinusThirteenAndMinusThree_WhenIsWithinBound_ThenShouldReturnTrue() throws RoverDeadException {
+    void givenCoordinateThreeAndThree_WhenIsWithinBound_ThenShouldReturnTrue() throws RoverDeadException {
         Coordinate upperCoordinate = new Coordinate(5, 5);
         Plateau plateau = new Plateau(upperCoordinate);
 
-        Coordinate roverCoordinate = new Coordinate(-13, -3);
-        Assertions.assertFalse(plateau.isWithinBound(roverCoordinate));
+        Coordinate roverCoordinate = new Coordinate(3, 3);
+        Assertions.assertTrue(plateau.isWithinBound(roverCoordinate));
 
     }
 
