@@ -25,4 +25,11 @@ class CoordinateTest {
         Coordinate coordinate = new Coordinate(7, -3);
         Assertions.assertFalse(coordinate.isBetween(upperCoordinate));
     }
+
+    @Test
+    void givenCoordinateminusSevenAndminusNine_WhenInBetweenThenBoundary_ThenShouldReturnTrue() {
+        Coordinate upperCoordinate = new Coordinate(5, 5);
+        Coordinate coordinate = new Coordinate(-7, -9);
+        Assertions.assertFalse(coordinate.isBetween(upperCoordinate));
+    }
 }
