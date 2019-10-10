@@ -16,11 +16,21 @@ class PlateauTest {
     }
 
     @Test
-    void givenCoordinate_WhenIsWithinBound_ThenShouldReturnTrue() {
+    void givenCoordinateEightAndNine_WhenIsWithinBound_ThenShouldReturnTrue() {
         Coordinate upperCoordinate = new Coordinate(5, 5);
         Plateau plateau = new Plateau(upperCoordinate);
 
         Coordinate roverCoordinate = new Coordinate(8, 9);
+        Assertions.assertFalse(plateau.isWithinBound(roverCoordinate));
+
+    }
+
+    @Test
+    void givenCoordinateTwoAndMinusThree_WhenIsWithinBound_ThenShouldReturnTrue() {
+        Coordinate upperCoordinate = new Coordinate(5, 5);
+        Plateau plateau = new Plateau(upperCoordinate);
+
+        Coordinate roverCoordinate = new Coordinate(2, -3);
         Assertions.assertFalse(plateau.isWithinBound(roverCoordinate));
 
     }
