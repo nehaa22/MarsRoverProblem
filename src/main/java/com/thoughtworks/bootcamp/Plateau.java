@@ -1,5 +1,7 @@
 package com.thoughtworks.bootcamp;
 
+import com.thoughtworks.bootcamp.Exception.RoverDeadException;
+
 public class Plateau {
     private Coordinate upperCoordinate;
 
@@ -7,7 +9,7 @@ public class Plateau {
         this.upperCoordinate = upperCoordinate;
     }
 
-    public boolean isWithinBound(Coordinate roverCoordinate) {
+    public boolean isWithinBound(Coordinate roverCoordinate) throws RoverDeadException {
         return (roverCoordinate.isBetween(upperCoordinate));
     }
 }

@@ -65,6 +65,14 @@ class RoverTest {
             Rover rover = new Rover(Direction.W, origin());
             Assertions.assertEquals(Direction.N, rover.turnRight());
         }
+
+        @Test
+        void givenFacingWest_WhenTurnRightThreeTimes_ThenShouldFaceSouth() {
+            Rover rover = new Rover(Direction.W, origin());
+            rover.turnRight();
+            rover.turnRight();
+            Assertions.assertEquals(Direction.S, rover.turnRight());
+        }
     }
 
     @Nested
@@ -135,7 +143,23 @@ class RoverTest {
             rover.move();
             Assertions.assertEquals(new Coordinate(3, -6), rover.move());
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+//        @Test
+//        void  givenFacingNorthOnBoundaryPosition_WhenMove_ThenShouldThrowRoadDeadException(){
+//            Rover rover = new Rover(Direction.N,new Coordinate(4,5));
+//            Assertions.assertThrows(RoverDeadException.class, () ->rover.move());
+//        }
     }
-
-
 }

@@ -11,11 +11,13 @@ public class Rover {
     }
 
     public Direction turnLeft() {
-        return direction.left();
+       Direction newDirection = direction.left();
+        return this.direction = newDirection;
     }
 
     public Direction turnRight() {
-        return direction.right();
+        Direction newDirection = direction.right();
+        return this.direction = newDirection;
     }
 
     public Coordinate move() {

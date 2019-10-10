@@ -1,12 +1,13 @@
 package com.thoughtworks.bootcamp;
 
+import com.thoughtworks.bootcamp.Exception.RoverDeadException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 class PlateauTest {
 
     @Test
-    void givenCoordinateTwoAndThree_WhenIsWithinBound_ThenShouldReturnTrue() {
+    void givenCoordinateTwoAndThree_WhenIsWithinBound_ThenShouldReturnTrue() throws RoverDeadException {
         Coordinate upperCoordinate = new Coordinate(5, 5);
         Plateau plateau = new Plateau(upperCoordinate);
 
@@ -16,7 +17,7 @@ class PlateauTest {
     }
 
     @Test
-    void givenCoordinateEightAndNine_WhenIsWithinBound_ThenShouldReturnTrue() {
+    void givenCoordinateEightAndNine_WhenIsWithinBound_ThenShouldReturnTrue() throws RoverDeadException {
         Coordinate upperCoordinate = new Coordinate(5, 5);
         Plateau plateau = new Plateau(upperCoordinate);
 
@@ -26,7 +27,7 @@ class PlateauTest {
     }
 
     @Test
-    void givenCoordinateTwoAndMinusThree_WhenIsWithinBound_ThenShouldReturnTrue() {
+    void givenCoordinateTwoAndMinusThree_WhenIsWithinBound_ThenShouldReturnTrue() throws RoverDeadException {
         Coordinate upperCoordinate = new Coordinate(5, 5);
         Plateau plateau = new Plateau(upperCoordinate);
 
@@ -36,7 +37,7 @@ class PlateauTest {
     }
 
     @Test
-    void givenCoordinateMinusThirteenAndMinusThree_WhenIsWithinBound_ThenShouldReturnTrue() {
+    void givenCoordinateMinusThirteenAndMinusThree_WhenIsWithinBound_ThenShouldReturnTrue() throws RoverDeadException {
         Coordinate upperCoordinate = new Coordinate(5, 5);
         Plateau plateau = new Plateau(upperCoordinate);
 
