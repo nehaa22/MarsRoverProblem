@@ -123,7 +123,7 @@ class RoverTest {
         }
 
         @Test
-        void givenFacingSouthtOnNewPosition_WhenMove_ThenShouldReturnNewCoordinate() {
+        void givenFacingSouthOnNewPosition_WhenMove_ThenShouldReturnNewCoordinate() {
             Rover rover = new Rover(Direction.S, new Coordinate(3, -3));
             Assertions.assertEquals(new Coordinate(3, -4), rover.move());
         }
