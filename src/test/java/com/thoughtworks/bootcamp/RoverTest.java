@@ -37,6 +37,14 @@ class RoverTest {
             Assertions.assertEquals(Direction.S, rover.turnLeft());
         }
 
+        @Test
+        void givenFacingWest_WhenTurnLeftThreeTimes_ThenShouldFaceNorth() {
+            Rover rover = new Rover(Direction.W, origin());
+            rover.turnLeft();
+            rover.turnLeft();
+            Assertions.assertEquals(Direction.N, rover.turnLeft());
+        }
+
     }
 
     @Nested
