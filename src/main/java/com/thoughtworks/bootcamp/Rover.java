@@ -20,7 +20,6 @@ public class Rover {
 
     public Coordinate move() {
         Coordinate newCoordinate = coordinate.move(direction);
-        this.coordinate = newCoordinate;
-        return newCoordinate;
+        return this.coordinate = newCoordinate;
     }
 }
