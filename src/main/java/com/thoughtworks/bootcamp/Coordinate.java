@@ -23,6 +23,11 @@ public class Coordinate {
         return new Coordinate((xCoordinate + direction.move().xCoordinate), (yCoordinate + direction.move().yCoordinate));
     }
 
+    public boolean isBetween(Coordinate upperCoordinate) {
+        return ((xCoordinate >= 0 || xCoordinate <= upperCoordinate.xCoordinate)
+                && yCoordinate <= 0 || yCoordinate <= upperCoordinate.yCoordinate);
+    }
+
     @Override
     public String toString() {
         return "Coordinate{" +
@@ -31,9 +36,4 @@ public class Coordinate {
                 '}';
     }
 
-
-    public boolean isBetween(Coordinate upperCoordinate) {
-        return ((xCoordinate >= 0 || xCoordinate <= upperCoordinate.xCoordinate)
-                && yCoordinate <= 0 || yCoordinate <= upperCoordinate.yCoordinate);
-    }
 }
