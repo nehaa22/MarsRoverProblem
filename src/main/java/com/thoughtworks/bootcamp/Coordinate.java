@@ -24,8 +24,8 @@ public class Coordinate {
     }
 
     public boolean isBetween(Coordinate upperCoordinate) {
-        return ((xCoordinate >= 0 || xCoordinate <= upperCoordinate.xCoordinate)
-                && yCoordinate <= 0 || yCoordinate <= upperCoordinate.yCoordinate);
+        return ((xCoordinate >= 0 && xCoordinate <= upperCoordinate.xCoordinate)
+                && yCoordinate >= 0 && yCoordinate <= upperCoordinate.yCoordinate);
     }
 
     @Override

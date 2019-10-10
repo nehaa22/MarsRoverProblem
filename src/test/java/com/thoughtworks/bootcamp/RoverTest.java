@@ -138,7 +138,7 @@ class RoverTest {
     }
 
     @Test
-    void givenCoordinate_WhenIsWithinBound_ThenShouldReturnTrue() {
+    void givenCoordinateTwoAndThree_WhenIsWithinBound_ThenShouldReturnTrue() {
         Coordinate upperCoordinate = new Coordinate(5, 5);
         Plateau plateau = new Plateau(upperCoordinate);
 
@@ -146,4 +146,8 @@ class RoverTest {
         Assertions.assertTrue(plateau.isWithinBound(roverCoordinate));
 
     }
+
+
+
+
 }
