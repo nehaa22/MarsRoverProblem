@@ -133,8 +133,16 @@ class RoverTest {
             Rover rover = new Rover(Direction.S, new Coordinate(3, -3));
             rover.move();
             rover.move();
-
             Assertions.assertEquals(new Coordinate(3, -6), rover.move());
         }
+    }
+
+    @Test
+    void givenCoordinate_WhenIsWithinBound_ThenShouldReturnTrue(){
+
+        Coordinate roverCorodinate = new Coordinate(2,3);
+        Plateau plateau = new  Plateau();
+        Assertions.assertEquals(true,plateau.isWithinBound(roverCorodinate));
+
     }
 }
