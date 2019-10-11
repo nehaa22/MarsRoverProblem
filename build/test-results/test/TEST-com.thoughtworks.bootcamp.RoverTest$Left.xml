@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.thoughtworks.bootcamp.RoverTest$Left" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-10-11T06:15:20" hostname="Snehas-MacBook-Pro-2.local" time="0.003">
+<testsuite name="com.thoughtworks.bootcamp.RoverTest$Left" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-10-11T06:42:58" hostname="Snehas-MacBook-Pro-2.local" time="0.003">
   <properties/>
-  <testcase name="givenFacingSouth_WhenTurnLeft_ThenShouldFaceEast()" classname="com.thoughtworks.bootcamp.RoverTest$Left" time="0.001"/>
+  <testcase name="givenFacingSouth_WhenTurnLeft_ThenShouldFaceEast()" classname="com.thoughtworks.bootcamp.RoverTest$Left" time="0.0"/>
   <testcase name="givenFacingEast_WhenTurnLeft_ThenShouldFaceNorth()" classname="com.thoughtworks.bootcamp.RoverTest$Left" time="0.0"/>
   <testcase name="givenFacingWest_WhenTurnLeftThreeTimes_ThenShouldFaceNorth()" classname="com.thoughtworks.bootcamp.RoverTest$Left" time="0.001"/>
   <testcase name="givenFacingWest_WhenTurnLeft_ThenShouldFaceSouth()" classname="com.thoughtworks.bootcamp.RoverTest$Left" time="0.0"/>

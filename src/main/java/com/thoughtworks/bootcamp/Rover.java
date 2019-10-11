@@ -17,24 +17,19 @@ public class Rover {
     }
 
     public Direction turnLeft() throws RoverAlreadyDeadException {
-        if(isDead){
+        if (isDead) {
             throw new RoverAlreadyDeadException();
         }
-        else {
-
-            Direction newDirection = direction.left();
-            return this.direction = newDirection;
-        }
+        this.direction = direction.left();
+        return this.direction;
     }
 
     public Direction turnRight() throws RoverAlreadyDeadException {
-        if(isDead){
+        if (isDead) {
             throw new RoverAlreadyDeadException();
         }
-        else{
-            Direction newDirection = direction.right();
-            return this.direction = newDirection;
-        }
+        this.direction = direction.right();
+        return this.direction;
     }
 
     public Coordinate move() throws RoverDeadException {
@@ -44,6 +39,6 @@ public class Rover {
             return this.coordinate = newCoordinate;
         else
             isDead = true;
-            throw new RoverDeadException();
+        throw new RoverDeadException();
     }
 }
