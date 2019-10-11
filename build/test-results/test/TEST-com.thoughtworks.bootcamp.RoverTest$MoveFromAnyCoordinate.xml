@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.thoughtworks.bootcamp.RoverTest$MoveFromAnyCoordinate" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-10-11T05:17:22" hostname="Snehas-MacBook-Pro-2.local" time="0.015">
+  <properties/>
+  <testcase name="givenWhenDeadRoverFacingNorth_WhenMove_ThenShouldThrowRoverDeadException()" classname="com.thoughtworks.bootcamp.RoverTest$MoveFromAnyCoordinate" time="0.009"/>
+  <testcase name="givenFacingWestOnNewPosition_WhenMove_ThenShouldReturnNewCoordinate()" classname="com.thoughtworks.bootcamp.RoverTest$MoveFromAnyCoordinate" time="0.001"/>
+  <testcase name="givenFacingNorthOnNewPosition_WhenMove_ThenShouldReturnNewCoordinate()" classname="com.thoughtworks.bootcamp.RoverTest$MoveFromAnyCoordinate" time="0.0"/>
+  <testcase name="givenFacingNorthOnBoundaryPosition_WhenMove_ThenShouldThrowRoadDeadException()" classname="com.thoughtworks.bootcamp.RoverTest$MoveFromAnyCoordinate" time="0.001"/>
+  <testcase name="givenFacingSouthOnNewPosition_WhenMoveThreeTimes_ThenShouldReturnNewCoordinate()" classname="com.thoughtworks.bootcamp.RoverTest$MoveFromAnyCoordinate" time="0.0"/>
+  <testcase name="givenFacingSouthOnNewPosition_WhenMove_ThenShouldReturnNewCoordinate()" classname="com.thoughtworks.bootcamp.RoverTest$MoveFromAnyCoordinate" time="0.0"/>
+  <testcase name="givenFacingEastOnNewPosition_WhenMove_ThenShouldReturnNewCoordinate()" classname="com.thoughtworks.bootcamp.RoverTest$MoveFromAnyCoordinate" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
