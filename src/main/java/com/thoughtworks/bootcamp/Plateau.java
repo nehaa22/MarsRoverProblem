@@ -5,9 +5,13 @@ public class Plateau {
     private Coordinate lowerCoordinate;
 
 
-    public Plateau(Coordinate upperCoordinate) {
+    public Plateau(Coordinate upperCoordinate,Coordinate lowerCoordinate) {
         this.upperCoordinate = upperCoordinate;
-        this.lowerCoordinate = new Coordinate(0, 0);
+        this.lowerCoordinate = lowerCoordinate;
+    }
+
+    public Plateau() {
+
     }
 
     public boolean isWithinBound(Coordinate roverCoordinate) {

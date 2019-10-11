@@ -8,8 +8,10 @@ class PlateauTest {
 
     @Test
     void givenCoordinateTwoAndThree_WhenIsWithinBound_ThenShouldReturnTrue() throws RoverDeadException {
+        Coordinate lowerCoordinate = new Coordinate(0, 0);
+
         Coordinate upperCoordinate = new Coordinate(5, 5);
-        Plateau plateau = new Plateau(upperCoordinate);
+        Plateau plateau = new Plateau(upperCoordinate,lowerCoordinate);
 
         Coordinate roverCoordinate = new Coordinate(2, 3);
         Assertions.assertTrue(plateau.isWithinBound(roverCoordinate));
@@ -19,7 +21,9 @@ class PlateauTest {
     @Test
     void givenCoordinateEightAndNine_WhenIsWithinBound_ThenShouldReturnTrue() throws RoverDeadException {
         Coordinate upperCoordinate = new Coordinate(5, 5);
-        Plateau plateau = new Plateau(upperCoordinate);
+        Coordinate lowerCoordinate = new Coordinate(0, 0);
+
+        Plateau plateau = new Plateau(upperCoordinate,lowerCoordinate);
 
         Coordinate roverCoordinate = new Coordinate(8, 9);
         Assertions.assertFalse(plateau.isWithinBound(roverCoordinate));
@@ -29,8 +33,9 @@ class PlateauTest {
     @Test
     void givenCoordinateFourAndThree_WhenIsWithinBound_ThenShouldReturnTrue() throws RoverDeadException {
         Coordinate upperCoordinate = new Coordinate(5, 5);
-        Plateau plateau = new Plateau(upperCoordinate);
+        Coordinate lowerCoordinate = new Coordinate(0, 0);
 
+        Plateau plateau = new Plateau(upperCoordinate,lowerCoordinate);
         Coordinate roverCoordinate = new Coordinate(4, 3);
         Assertions.assertTrue(plateau.isWithinBound(roverCoordinate));
 
@@ -39,8 +44,9 @@ class PlateauTest {
     @Test
     void givenCoordinateThreeAndThree_WhenIsWithinBound_ThenShouldReturnTrue() throws RoverDeadException {
         Coordinate upperCoordinate = new Coordinate(5, 5);
-        Plateau plateau = new Plateau(upperCoordinate);
+        Coordinate lowerCoordinate = new Coordinate(0, 0);
 
+        Plateau plateau = new Plateau(upperCoordinate,lowerCoordinate);
         Coordinate roverCoordinate = new Coordinate(3, 3);
         Assertions.assertTrue(plateau.isWithinBound(roverCoordinate));
 

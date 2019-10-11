@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.thoughtworks.bootcamp.PlateauTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-10-11T05:17:22" hostname="Snehas-MacBook-Pro-2.local" time="0.002">
+<testsuite name="com.thoughtworks.bootcamp.PlateauTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-10-11T06:15:20" hostname="Snehas-MacBook-Pro-2.local" time="0.001">
   <properties/>
-  <testcase name="givenCoordinateFourAndThree_WhenIsWithinBound_ThenShouldReturnTrue()" classname="com.thoughtworks.bootcamp.PlateauTest" time="0.001"/>
+  <testcase name="givenCoordinateFourAndThree_WhenIsWithinBound_ThenShouldReturnTrue()" classname="com.thoughtworks.bootcamp.PlateauTest" time="0.0"/>
   <testcase name="givenCoordinateThreeAndThree_WhenIsWithinBound_ThenShouldReturnTrue()" classname="com.thoughtworks.bootcamp.PlateauTest" time="0.0"/>
   <testcase name="givenCoordinateEightAndNine_WhenIsWithinBound_ThenShouldReturnTrue()" classname="com.thoughtworks.bootcamp.PlateauTest" time="0.0"/>
   <testcase name="givenCoordinateTwoAndThree_WhenIsWithinBound_ThenShouldReturnTrue()" classname="com.thoughtworks.bootcamp.PlateauTest" time="0.0"/>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.thoughtworks.bootcamp.RoverTest$MoveFromOrigin" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-10-11T05:17:22" hostname="Snehas-MacBook-Pro-2.local" time="0.003">
+<testsuite name="com.thoughtworks.bootcamp.RoverTest$MoveFromOrigin" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-10-11T06:15:20" hostname="Snehas-MacBook-Pro-2.local" time="0.003">
   <properties/>
   <testcase name="givenFacingWest_WhenMove_ThenShouldReturnNewCoordinate()" classname="com.thoughtworks.bootcamp.RoverTest$MoveFromOrigin" time="0.0"/>
-  <testcase name="givenFacingSouth_WhenMove_ThenShouldReturnNewCoordinate()" classname="com.thoughtworks.bootcamp.RoverTest$MoveFromOrigin" time="0.001"/>
-  <testcase name="givenFacingNorth_WhenMove_ThenShouldReturnNewCoordinate()" classname="com.thoughtworks.bootcamp.RoverTest$MoveFromOrigin" time="0.0"/>
-  <testcase name="givenFacingEast_WhenMove_ThenShouldReturnNewCoordinate()" classname="com.thoughtworks.bootcamp.RoverTest$MoveFromOrigin" time="0.0"/>
+  <testcase name="givenFacingSouth_WhenMove_ThenShouldReturnNewCoordinate()" classname="com.thoughtworks.bootcamp.RoverTest$MoveFromOrigin" time="0.0"/>
+  <testcase name="givenFacingNorth_WhenMove_ThenShouldReturnNewCoordinate()" classname="com.thoughtworks.bootcamp.RoverTest$MoveFromOrigin" time="0.001"/>
+  <testcase name="givenFacingEast_WhenMove_ThenShouldReturnNewCoordinate()" classname="com.thoughtworks.bootcamp.RoverTest$MoveFromOrigin" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

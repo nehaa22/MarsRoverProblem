@@ -7,21 +7,28 @@ public class Rover {
 
     private Direction direction;
     private Coordinate coordinate;
-    private boolean idDead = false;
+    private Plateau plateau;
+    private boolean isDead = false;
 
-    public Rover(Direction direction, Coordinate coordinate) {
+    public Rover(Direction direction, Coordinate coordinate, Plateau plateau) {
         this.direction = direction;
         this.coordinate = coordinate;
+        this.plateau = plateau;
     }
 
-    public Direction turnLeft()  {
+    public Direction turnLeft() throws RoverAlreadyDeadException {
+        if(isDead){
+            throw new RoverAlreadyDeadException();
+        }
+        else {
 
-        Direction newDirection = direction.left();
-        return this.direction = newDirection;
+            Direction newDirection = direction.left();
+            return this.direction = newDirection;
+        }
     }
 
     public Direction turnRight() throws RoverAlreadyDeadException {
-        if(idDead){
+        if(isDead){
             throw new RoverAlreadyDeadException();
         }
         else{
@@ -33,12 +40,10 @@ public class Rover {
     public Coordinate move() throws RoverDeadException {
         Coordinate newCoordinate = coordinate.move(direction);
 
-        Coordinate upperCoordinate = new Coordinate(5, 5);
-        Coordinate lowerCoordinate = new Coordinate(0, 0);
-        if (newCoordinate.isBetween(lowerCoordinate, upperCoordinate))
+        if (plateau.isWithinBound(newCoordinate))
             return this.coordinate = newCoordinate;
         else
-            idDead = true;
+            isDead = true;
             throw new RoverDeadException();
     }
 }
